@@ -1,0 +1,47 @@
+/* Set the background color and text styles for the page */
+body {
+  background-color: #FF91A4; /* Salmon color */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Dark background for the toolbar */
+  padding: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links in the navbar */
+.navbar a:hover {
+  background-color: #FF6347; /* Tomato color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Image container styling */
+.image-container {
+  text-align: center;
+  margin-top: 30px; /* Adds some space between the image and other content */
+}
+
+/* Image resizing to 40% */
+.image-container img {
+  width: 40%;  /* Shrinks the image to 40% of its original size */
+  height: auto; /* Keeps the aspect ratio intact */
+  max-width: 400px; /* Limits the maximum width */
+  border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
