@@ -1,90 +1,78 @@
-/* Set the background color and text styles for the page */
-booy {
-  background-color: #FF91A4; /* Salmon color */
-  font-family: 'Arial', sans-serif; /* Default font */
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
 /* Set the background color to salmon */
 body {
   background-color: #FF91A4; /* Salmon color */
-  font-family: Arial, sans-serif; /* Use a simple sans-serif font */
+  font-family: 'Arial', sans-serif; /* Clean, readable font */
+  color: #333; /* Default text color */
   margin: 0;
   padding: 0;
-  color: #333; /* Default text color */
 }
 
-/* Navbar styles */
+/* Navbar Styling */
 .navbar {
-  display: flex;
-  justify-content: center; /* Center the navbar items horizontally */
-  align-items: center;     /* Center the navbar items vertically */
-  background-color: #FF6347; /* Tomato color */
-  padding: 15px 0; /* Adjust padding for better appearance */
-  position: sticky; /* Keeps the navbar at the top of the page */
+  background-color: #FF6347; /* Tomato color for the navbar */
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
   top: 0;
-  z-index: 1000; /* Ensure it stays on top of other content */
+  left: 0;
+  z-index: 1000; /* Keep the navbar on top of other elements */
 }
 
 .navbar a {
-  text-decoration: none;
   color: white;
-  font-size: 20px; /* Bigger font size for better readability */
-  padding: 12px 30px;
-  margin: 0 15px; /* Space out the links */
-  text-align: center;
-  font-weight: bold; /* Bold text for emphasis */
-  letter-spacing: 1px; /* Space out the letters a little for style */
-  text-transform: uppercase; /* Make text uppercase */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  padding: 14px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
-/* Hover effect for links in the navbar */
 .navbar a:hover {
-  background-color: #FF91A4; /* Light salmon on hover */
-  color: black; /* Change text color to black on hover */
-  border-radius: 5px; /* Rounded corners on hover */
+  background-color: #FF91A4; /* Change to salmon on hover */
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect */
 }
 
-/* Page content styles */
+/* Main content styling */
 h1, p {
   text-align: center;
-  font-family: 'Roboto', sans-serif; /* Apply a more modern font */
+  color: #333;
 }
 
 h1 {
+  margin-top: 100px; /* Space for the navbar */
   font-size: 36px;
-  font-weight: bold; /* Bold for the heading */
-  margin-top: 50px; /* Space above the heading */
-  color: #333;
 }
 
 p {
   font-size: 18px;
   margin-top: 20px;
-  color: #333;
 }
 
 /* Image container styling */
 .image-container {
   text-align: center;
-  margin-top: 30px; /* Adds some space between the image and other content */
+  margin-top: 40px;
 }
 
-/* Image resizing to 40% */
 .image-container img {
-  width: 40%;  /* Shrinks the image to 40% of its original size */
-  height: auto; /* Keeps the aspect ratio intact */
-  max-width: 400px; /* Limits the maximum width */
-  border-radius: 10px; /* Optional: adds rounded corners to the image */
+  width: 40%; /* Shrink image to 40% of its original size */
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px; /* Optional: rounded corners */
 }
 
-/* General container for centering page elements */
-.center-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .navbar a {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .image-container img {
+    width: 80%; /* Make images larger on small screens */
+  }
 }
