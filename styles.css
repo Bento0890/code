@@ -6,6 +6,14 @@ booy {
   margin: 0;
   padding: 0;
 }
+/* Set the background color to salmon */
+body {
+  background-color: #FF91A4; /* Salmon color */
+  font-family: Arial, sans-serif; /* Use a simple sans-serif font */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color */
+}
 
 /* Navbar styles */
 .navbar {
