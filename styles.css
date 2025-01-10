@@ -1,7 +1,7 @@
 /* Set the background color and text styles for the page */
 body {
   background-color: #FF91A4; /* Salmon color */
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif; /* Default font */
   color: #333;
   margin: 0;
   padding: 0;
@@ -10,26 +10,52 @@ body {
 /* Navbar styles */
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333; /* Dark background for the toolbar */
-  padding: 15px;
+  justify-content: center; /* Center the navbar items horizontally */
+  align-items: center;     /* Center the navbar items vertically */
+  background-color: #FF6347; /* Tomato color */
+  padding: 15px 0; /* Adjust padding for better appearance */
+  position: sticky; /* Keeps the navbar at the top of the page */
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  padding: 10px 20px;
-  margin: 0 10px;
+  font-size: 20px; /* Bigger font size for better readability */
+  padding: 12px 30px;
+  margin: 0 15px; /* Space out the links */
   text-align: center;
-  transition: background-color 0.3s ease;
+  font-weight: bold; /* Bold text for emphasis */
+  letter-spacing: 1px; /* Space out the letters a little for style */
+  text-transform: uppercase; /* Make text uppercase */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover effect for links in the navbar */
 .navbar a:hover {
-  background-color: #FF6347; /* Tomato color on hover */
+  background-color: #FF91A4; /* Light salmon on hover */
+  color: black; /* Change text color to black on hover */
   border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Page content styles */
+h1, p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Apply a more modern font */
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold; /* Bold for the heading */
+  margin-top: 50px; /* Space above the heading */
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
 }
 
 /* Image container styling */
@@ -44,4 +70,13 @@ body {
   height: auto; /* Keeps the aspect ratio intact */
   max-width: 400px; /* Limits the maximum width */
   border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
+
+/* General container for centering page elements */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
